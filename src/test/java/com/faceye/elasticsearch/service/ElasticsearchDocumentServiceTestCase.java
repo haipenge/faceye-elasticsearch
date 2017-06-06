@@ -32,16 +32,7 @@ public class ElasticsearchDocumentServiceTestCase {
 		ElasticsearchDocument doc =this.elasticsearchDocumentService.get(1L);
 		Assert.isTrue(doc!=null); 
 	}
-	@Test
-	public void testMultiSave() throws Exception{
-		this.elasticsearchDocumentService.multiDocSave(5000);
-		Assert.isTrue(true);
-	}
-	@Test
-	public void testBatchMultiSave() throws Exception{
-		this.elasticsearchDocumentService.batchMultiDocSave(1575500, 5000000);
-		Assert.isTrue(true);
-	}
+	
 	@Test
 	public void testUpdate() throws Exception{
 		long start=System.currentTimeMillis();
